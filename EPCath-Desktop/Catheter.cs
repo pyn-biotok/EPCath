@@ -11,6 +11,21 @@ namespace EPCath_Desktop
         public string type, curve, diam, shpac, irr;
         public string cont_qty, d_tip;
 
+        public void CreateCath()
+        {
+            switch (type)
+            {
+                case "DIA":
+                    Console.WriteLine("BIOTOK" + " " + type + "." + curve + "6" + cont_qty + shpac + "N");
+                    break;
+                
+                case "ABL":
+                    Console.WriteLine("BIOTOK" + " " + type + "." + curve + "6" + cont_qty + shpac + "N");
+                    break;
+            }
+            
+        }
+
         
 
      

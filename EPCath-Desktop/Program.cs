@@ -21,7 +21,8 @@ namespace EPCath_Desktop
                     switch (type_read)
                     {
                         case "1":
-                            c1.curve = "CS"; 
+                            c1.curve = "CS";
+                            c1.cont_qty = "D";
                     break;
 
                         case "2":
@@ -35,7 +36,9 @@ namespace EPCath_Desktop
                         case "4":
                             c1.curve = "DA";
                             break;
+                            
                     }
+                    c1.diam = "6";
                     break;
                 
                         case "2" :
@@ -59,11 +62,40 @@ namespace EPCath_Desktop
                         
                     }
                     break;
-                
-          
+                    Console.WriteLine("Выберите диаметр катетера: 1 - 6F; 2 - 7.5F");
+                    type_read = Console.ReadLine();
+                    switch (type_read)
+                    {
+                        case "1":
+                            c1.diam = "6";
+                            break;
+
+                        case "2":
+                            c1.diam = "75";
+                            break;
+
+                       
+                    }
+
+
             }
-           
-            Console.WriteLine("BIOTOK" + " " + c1.type + "." + c1.curve);
+
+            Console.WriteLine("Выберите межконтактное расстояние: 1: 5 мм; 2: 2-5-2 мм");
+            type_read = Console.ReadLine();
+            switch (type_read)
+            {
+                case "1":
+                    c1.shpac = "005";
+                    break;
+
+                case "2":
+                    c1.shpac = "252";
+                    break;
+
+
+            }
+
+            c1.CreateCath();
 
             /*Console.WriteLine("Введите диаметр катетера");
             c1.diam = Console.ReadLine();
