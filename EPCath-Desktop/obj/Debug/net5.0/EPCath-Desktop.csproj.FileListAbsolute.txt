@@ -1,0 +1,16 @@
+D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\bin\Debug\net5.0\EPCath-Desktop.exe
+D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\bin\Debug\net5.0\EPCath-Desktop.deps.json
+D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\bin\Debug\net5.0\EPCath-Desktop.runtimeconfig.json
+D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\bin\Debug\net5.0\EPCath-Desktop.runtimeconfig.dev.json
+D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\bin\Debug\net5.0\EPCath-Desktop.dll
+D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\bin\Debug\net5.0\ref\EPCath-Desktop.dll
+D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\bin\Debug\net5.0\EPCath-Desktop.pdb
+D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.csproj.AssemblyReference.cache
+D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.GeneratedMSBuildEditorConfig.editorconfig
+D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.AssemblyInfoInputs.cache
+D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.AssemblyInfo.cs
+D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.csproj.CoreCompileInputs.cache
+D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.dll
+D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\obj\Debug\net5.0\ref\EPCath-Desktop.dll
+D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.pdb
+D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.genruntimeconfig.cache
