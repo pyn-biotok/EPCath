@@ -7,16 +7,26 @@ namespace EPCath_Desktop
     {
         static void Main(string[] args)
         {
-            Catheter c1 = new Catheter();
-            c1.CreateCath();
-            
-            Catheter c2 = new Catheter();
-            c2.CreateCath();
-           
             List<Catheter> cath_list = new List<Catheter>();
+            Console.WriteLine("Введите количество  вариантов исполнения катетеров разных партий, вносимых в документ:");
+            int Cath_qty = Int32.Parse(Console.ReadLine());
+        
+            for (int i = 0; i < Cath_qty; i++)
+            {
+                Catheter c = new Catheter();
+                c.CreateCath();
+                cath_list.Add(c);
+            }
 
-            cath_list.Add(c1);
-            cath_list.Add(c2);
+
+
+            foreach (Catheter c in cath_list)
+            {
+                c.WriteCathType();
+            }
+           
+                   
+
         }
 
 
