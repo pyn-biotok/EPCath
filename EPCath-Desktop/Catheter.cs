@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace EPCath_Desktop
 {
@@ -10,7 +11,25 @@ namespace EPCath_Desktop
     {
 
         public string type, curve, diam, shpac, irr;
-        public string cont_qty, d_tip;
+        public string cont_qty, d_tip, LOT, SN;
+        public DateTime dt;
+        public void Cath_Info()
+        {
+
+            Console.WriteLine("Введи код партии изделия в формате '000':");
+            string LOT = Console.ReadLine();
+
+            
+            string targetDateFormat = "MM/yyyy";
+            Console.WriteLine("Введи дату изготовления изделия в формате ММ/ГГГГ:");
+
+            string enteredDateString = Console.ReadLine();
+
+            dt = DateTime.ParseExact(enteredDateString, targetDateFormat, CultureInfo.InvariantCulture);
+
+            //Console.WriteLine(dt.ToString("MM/yyyy"));
+
+            }
 
         public void CreateCath() // метод создания варианта исполнения катетера
         {
@@ -51,6 +70,8 @@ namespace EPCath_Desktop
                     Console.WriteLine("BIOTOK" + " " + type + "." + curve + diam + cont_qty + shpac + irr + d_tip);
                     break;
             }
+            Console.WriteLine("Серийный номер:" + LOT);
+            Console.WriteLine("дата изготовления:" + dt.ToString("MM/yyyy"));
         }
 
         public Catheter()
@@ -116,7 +137,7 @@ namespace EPCath_Desktop
             shpac = "252";
 
             Cath_d_tip();
-
+            Cath_Info();
         m2: WriteCathType();
         }
 
@@ -225,23 +246,26 @@ namespace EPCath_Desktop
             diam = "6"; // если выбрана диагностика, сразу показываем диаметр 6 Френч
             Cath_cont_qty(); // выбор количества контактных элементов
             Cath_shpac();
-
+            Cath_Info();
         m1: WriteCathType();
 
         }
 
-
-
-
-        
-    
-
-    
-    }
-        
-
        
+
+
+
+
+
+
+
+
+
     }
+
+
+
+}
 
    
      
