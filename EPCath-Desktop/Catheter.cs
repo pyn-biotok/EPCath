@@ -12,20 +12,37 @@ namespace EPCath_Desktop
         public string type, curve, diam, shpac, irr;
         public string cont_qty, d_tip;
 
-        public Catheter()
-        {
-            Console.WriteLine("Создание варианта исполнения катетера");
-        }
-
-        public void CreatDIACath()
-        {
-
-}
-
         public void CreateCath() // метод создания варианта исполнения катетера
+        {
+            Console.WriteLine("Выберите тип катетера: 1 - DIA, 2 - ABL"); // выбор типа катетера
+            string type_read = Console.ReadLine();
+
+            switch (type_read)
+
+            {
+                case "1": // выбрана диагностика
+
+                    type = "DIA";
+
+                    CreatDIACath();
+
+                    break;
+
+                case "2": // выбран абляционный тип катетера
+                    type = "ABL";
+                    CreatABLCath();
+                    break;
+
+
+            }
+            
+
+        }
+        public void WriteCathType()
         {
             switch (type)
             {
+
                 case "DIA":
                     Console.WriteLine("BIOTOK" + " " + type + "." + curve + "6" + cont_qty + shpac + "N");
                     break;
@@ -34,7 +51,73 @@ namespace EPCath_Desktop
                     Console.WriteLine("BIOTOK" + " " + type + "." + curve + diam + cont_qty + shpac + irr + d_tip);
                     break;
             }
+        }
 
+        public Catheter()
+        {
+            Console.WriteLine("Создание варианта исполнения катетера");
+        }
+
+        public string Cath_irr() // проверка на наличие орошения
+        {
+            Console.WriteLine("Наличие орошения: 1 - ДА; 2 - НЕТ"); // проверка на наличие орошения
+            string type_read = Console.ReadLine();
+            switch (type_read)
+            {
+                case "1":
+                    curve = "SM";
+                    diam = "75";
+                    cont_qty = "Q";
+                    shpac = "252";
+                    irr = "J";
+                    d_tip = "35";
+                    return irr;
+                    break;
+
+
+                case "2":
+                    irr = "N";
+                    Cath_d_tip();
+                    return irr;
+                    break;
+
+
+            }
+            return irr;
+        }
+
+        public void CreatABLCath()
+        {
+       
+            Cath_irr();
+            if (irr == "J")
+            {
+                goto m2;
+            }
+            Console.WriteLine("Выберите тип кривизны катетера: 1 - SMALL; 2 - MEDIUM; 3 - LARGE");
+            string type_read = Console.ReadLine();
+            switch (type_read)
+            {
+                case "1":
+                    curve = "SS";
+                    break;
+
+                case "2":
+                    curve = "SM";
+                    break;
+
+                case "3":
+                    curve = "SL";
+                    break;
+            }
+
+            Cath_diam();
+            cont_qty = "Q";
+            shpac = "252";
+
+            Cath_d_tip();
+
+        m2: WriteCathType();
         }
 
         public void Cath_diam()
@@ -91,55 +174,75 @@ namespace EPCath_Desktop
             }
         }
 
-        public string Cath_irr()
-        {
-            Console.WriteLine("Наличие орошения: 1 - ДА; 2 - НЕТ"); // проверка на наличие орошения
-            string type_read = Console.ReadLine();
-            switch (type_read)
-            {
-                case "1":
-                    curve = "SM";
-                    diam = "75";
-                    cont_qty = "Q";
-                    shpac = "252";
-                    irr = "J";
-                    d_tip = "35";
-                    return irr;
-                    break;
 
-
-                case "2":
-                    irr = "N";
-                    Cath_d_tip();
-                    return irr;
-                    break;
-
-
-                     }
-            return irr;
-        } 
         public void Cath_d_tip()
         {
-            Console.WriteLine("Длина дистального контакта: 1 - 3,5 мм; 2 - 4 мм; 3 - 8 мм"); // проверка на наличие орошения
+            Console.WriteLine("Длина дистального контакта:  1 - 4 мм; 2 - 8 мм"); // проверка на наличие орошения
             string type_read = Console.ReadLine();
             switch (type_read)
             {
+                
                 case "1":
-                    d_tip = "35";
-                    break;
-
-                case "2":
                     d_tip = "4";
                     break;
 
-                case "3":
+                case "2":
                     d_tip = "8";
                     break;
-            
+
             }
         }
+        public void CreatDIACath() // создание диагностического катетера
+        {
+            Console.WriteLine("Выберите тип кривизны катетера: 1 - CS; 2 - CO; 3 - JO, 4 - DA"); // если выбрана диагностика, то сразу выбираем ее кривизну
+            string type_read = Console.ReadLine();
+            switch (type_read)
+            {
+                case "1": // выбрана диагностика
+                    curve = "CS";
+                    diam = "6";
+                    cont_qty = "D"; // если выбран коронаярный синус - сразу указываем, тчо он может быть 10 полюсным
+                    shpac = "252";
+                    goto m1;
+                    break;
+
+                case "2":
+                    curve = "CO";
+
+                    break;
+
+                case "3":
+                    curve = "JO";
+                    break;
+
+                case "4":
+                    curve = "DA";
+                    break;
+
+
+            }
+
+            diam = "6"; // если выбрана диагностика, сразу показываем диаметр 6 Френч
+            Cath_cont_qty(); // выбор количества контактных элементов
+            Cath_shpac();
+
+        m1: WriteCathType();
+
+        }
+
+
+
+
+        
+    
+
+    
     }
-}
+        
+
+       
+    }
+
    
      
 
