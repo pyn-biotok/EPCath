@@ -14,3 +14,11 @@ D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\obj\Debug\net5.0\
 D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\obj\Debug\net5.0\ref\EPCath-Desktop.dll
 D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.pdb
 D:\Podskarbiy\YandexDisk\My REPOSITORIES\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.genruntimeconfig.cache
+C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.csprojAssemblyReference.cache
+C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.AssemblyInfoInputs.cache
+C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.AssemblyInfo.cs
+C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.csproj.CoreCompileInputs.cache
+C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.dll
+C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\obj\Debug\net5.0\ref\EPCath-Desktop.dll
+C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.pdb
