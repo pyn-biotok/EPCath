@@ -7,76 +7,56 @@ using System.Globalization;
 
 namespace EPCath_Desktop
 {
+   
+
     public class CathCreat
     {
-        Catheter c = new Catheter();
+        // задаем все подсказки для пользователя
+        public string select_Type = "Тип катетера:";
+        string select_Curve = "Тип кривизны дистальной части:";
+        string select_Diam = "Диаметр катетера:";
+        string select_Cont_qty = "Количество контактных элементов:";
+        string select_shpac = "Межконтактное расстояние";
+        string select_irr = "Наличие орошения";
+        string select_Tip_length = "Длина дистального контактного элемента";
 
-     
-       
-
-       public  enum Cath_type
+              
+        public  enum Cath_type // типы катетеров
         {
             ESO, DIA, ABL
         }
 
-        public enum Eso_curve
-        {
-            _ER, _1W, _2W
-        }
 
-        enum Abl_curve
+        
+        void Cath_Type() // метод выбора варианта исполнения катетера
         {
             
-            SS,
-            SM,
-            SL
-        }
-
-        enum Dia_curve
-        {
-            CO,
-            JO,
-            DA,
-            CS
-        }
-
-        public void Cath_forming() // формирвоание нового катетера
-        {
-
-      
-            Cath_Type(); // пошли на выбор типа катетера
-            Cath_Curve();
-
-        }
-
-
-        void Cath_Type() // выбор варианта исполнения катетера
-        {
+            int i = 1;
+            Console.WriteLine(select_Type);
+            foreach (Cath_type type in Enum.GetValues(typeof(Cath_type)))
+            {
+               
+                Console.WriteLine(i + ": " + type);
+                i++;
+            }
+             
+            string readType = Console.ReadLine(); 
            
-
-            Console.WriteLine("Выберите варинат исполнения катетера: 1 - ESO; 2 - DIA; 3 - ABL " );
-              
-
-            string readType = Console.ReadLine();
-          
 
             switch (readType)
             {
 
                 case "1":
-                                                           
-                    c.type = Cath_type.ESO.ToString(); ;
-                    break;
+                CreatEsoCath eso = new CreatEsoCath(Cath_type.ESO.ToString());
+                break;
 
                 case "2":
+                CreatDiaCath dia = new CreatDiaCath(Cath_type.DIA.ToString());
+                break;
                     
-                    c.type = Cath_type.DIA.ToString(); ;
-                    break;
-                
                 case "3":
-                    
-                    c.type = Cath_type.ABL.ToString(); ;
-                    break;
+                CreatAblCath abl = new CreatAblCath(Cath_type.ABL.ToString());
+                break;
 
             }
 
@@ -87,16 +67,28 @@ namespace EPCath_Desktop
 
         void Cath_Curve() // выбор кривизны катетера
         {
-            
-          
-            switch (c.type)
-            {
+            Cath_type types;
+            bool num = false;
+            types = Enum.Parse<Cath_type>(c.type, num);
 
-                case :
+          
+           switch (types)
+            {
+                
+                case Cath_type.ESO:
                     Eso_curve curving = Eso_curve._ER;
                     break;
-               
+
+                case Cath_type.DIA:
+                
+                    break;
+
+                case Cath_type.ABL:
+                  //  Abl_curve curving = Eso_curve._ER;
+                    break;
+
             }
+           
 
             if (c.type == Cath_type.ESO.ToString())
 
