@@ -1,9 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\BIOTOK-PYN\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\BIOTOK-PYN\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      "C:\\Users\\Yakov\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Yakov\\.nuget\\packages"
     ]
   }
 }

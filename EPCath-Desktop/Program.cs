@@ -11,7 +11,7 @@ namespace EPCath_Desktop
            
             Console.WriteLine(DateTime.Now); // вывод информации о сегодняшнем дне и времени
 
-            //List<Catheter> cath_list = new List<Catheter>();
+            List<Catheter> cath_list = new List<Catheter>();
             Console.WriteLine("Введите количество  вариантов исполнения катетеров разных партий, вносимых в документ:");
             int Cath_qty = Int32.Parse(Console.ReadLine());
 

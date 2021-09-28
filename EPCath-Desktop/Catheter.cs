@@ -7,24 +7,30 @@ using System.Globalization;
 
 namespace EPCath_Desktop
 {
-    class Catheter
+   
+
+    public class Catheter
     {
-        string 
-            type,
-            curve,
-            diam,
-            cont_qty,
-            shpac,
-            irr,
-            d_tip;
-      
-     
-
-     }
 
 
+        public string
 
- }
+
+          type,
+             curve,
+             diam,
+             cont_qty,
+             shpac,
+             irr,
+             d_tip;
+         
+
+
+    }
+
+   
+
+}
 
   
 

@@ -22,3 +22,11 @@ C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\obj\Debug\net5.0\E
 C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.dll
 C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\obj\Debug\net5.0\ref\EPCath-Desktop.dll
 C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.pdb
+C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\bin\Debug\net5.0\EPCath-Desktop.exe
+C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\bin\Debug\net5.0\EPCath-Desktop.deps.json
+C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\bin\Debug\net5.0\EPCath-Desktop.runtimeconfig.json
+C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\bin\Debug\net5.0\EPCath-Desktop.runtimeconfig.dev.json
+C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\bin\Debug\net5.0\EPCath-Desktop.dll
+C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\bin\Debug\net5.0\ref\EPCath-Desktop.dll
+C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\bin\Debug\net5.0\EPCath-Desktop.pdb
+C:\Users\Yakov\YandexDisk\MY REPOSIRORY\EPCath\EPCath-Desktop\obj\Debug\net5.0\EPCath-Desktop.genruntimeconfig.cache
