@@ -8,6 +8,11 @@ namespace EPCath_Desktop
 {
     class Cath_Info
     {
+        public Cath_Info()
+        {
+            
+          
 
+        }
     }
 }

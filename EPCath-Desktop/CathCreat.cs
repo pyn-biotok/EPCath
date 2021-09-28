@@ -7,115 +7,112 @@ using System.Globalization;
 
 namespace EPCath_Desktop
 {
-   
 
     public class CathCreat
-    {
-        // задаем все подсказки для пользователя
-        public string select_Type = "Тип катетера:";
-        string select_Curve = "Тип кривизны дистальной части:";
-        string select_Diam = "Диаметр катетера:";
-        string select_Cont_qty = "Количество контактных элементов:";
-        string select_shpac = "Межконтактное расстояние";
-        string select_irr = "Наличие орошения";
-        string select_Tip_length = "Длина дистального контактного элемента";
 
-              
-        public  enum Cath_type // типы катетеров
+    {
+        string select_Type = "Тип катетера:";
+        enum cath_type
         {
             ESO, DIA, ABL
         }
 
-
-        
-        void Cath_Type() // метод выбора варианта исполнения катетера
+        public Catheter Cath_Type() // выбор кривизны катетера
         {
-            
+           // Catheter c1 = new Catheter();
+
+           // cath_type types;
+           // bool num = false;
+           // types = Enum.Parse<cath_type>(c1.type, num);
+
+
             int i = 1;
             Console.WriteLine(select_Type);
-            foreach (Cath_type type in Enum.GetValues(typeof(Cath_type)))
+            foreach (cath_type types in Enum.GetValues(typeof(cath_type)))
             {
-               
-                Console.WriteLine(i + ": " + type);
+
+                Console.WriteLine(i + ": " + types);
                 i++;
             }
-             
-            string readType = Console.ReadLine(); 
-           
+            
+            string readType = Console.ReadLine();
 
-            switch (readType)
+            //switch (readType)
             {
 
-                case "1":
-                CreatEsoCath eso = new CreatEsoCath(Cath_type.ESO.ToString());
-                break;
+              //  case "1":
+                    CreatEsoCath cath_eso = new CreatEsoCath();
+                    Catheter c1 = cath_eso.EsoDiam();
+                   
+                    //c1.type = cath_type.ESO.ToString();
+                 //   break;
+                    return c1;
 
-                case "2":
-                CreatDiaCath dia = new CreatDiaCath(Cath_type.DIA.ToString());
-                break;
-                    
-                case "3":
-                CreatAblCath abl = new CreatAblCath(Cath_type.ABL.ToString());
-                break;
+                    /*case "2":
+                        CreatDiaCath cath_dia = new CreatDiaCath();
+                        Catheter c1 = cath_dia.EsoDiam();
+                        return c1;
+                        return c1;
+                        break;
 
-            }
-
-           
-        }
-
-      
-
-        void Cath_Curve() // выбор кривизны катетера
-        {
-            Cath_type types;
-            bool num = false;
-            types = Enum.Parse<Cath_type>(c.type, num);
-
-          
-           switch (types)
-            {
-                
-                case Cath_type.ESO:
-                    Eso_curve curving = Eso_curve._ER;
-                    break;
-
-                case Cath_type.DIA:
-                
-                    break;
-
-                case Cath_type.ABL:
-                  //  Abl_curve curving = Eso_curve._ER;
-                    break;
+                    case "3":
+                        CreatAblCath cath_abl = new CreatAblCath();
+                        Catheter c1 = cath_abl.EsoDiam();
+                        return c1;
+                        return c1;
+                        break;*/
 
             }
-           
-
-            if (c.type == Cath_type.ESO.ToString())
-
-            {
-
-                Eso_curve curving;
-                curving = Eso_curve._ER;
-                c.curve = curving.ToString();
-                //Console.WriteLine(c.curve);
-            }
+            
 
         }
-
-
-
-
-
-
-
-
+        
 
     }
 }
 
-      
-       
-       
 
-    
+
+
+
+
+
+
+
+/*
+
+if (c.type == Cath_type.ESO.ToString())
+
+{
+    Eso_curve curving;
+    curving = Eso_curve._ER;
+    c.curve = curving.ToString();
+    //Console.WriteLine(c.curve);
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

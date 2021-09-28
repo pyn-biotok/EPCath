@@ -8,21 +8,23 @@ namespace EPCath_Desktop
     {
         static void Main(string[] args)
         {
-           
-            Console.WriteLine(DateTime.Now); // вывод информации о сегодняшнем дне и времени
+        
 
-            List<Catheter> cath_list = new List<Catheter>();
+        Console.WriteLine(DateTime.Now); // вывод информации о сегодняшнем дне и времени
+
+         
             Console.WriteLine("Введите количество  вариантов исполнения катетеров разных партий, вносимых в документ:");
             int Cath_qty = Int32.Parse(Console.ReadLine());
 
             for (int i = 0; i < Cath_qty; i++)
             {
 
-                CathCreat cc = new CathCreat();
-                       
-                cc.Cath_forming();
+                CathCreat creator = new CathCreat();
+              
+                Catheter exemplar = creator.Cath_Type();
 
-           
+                Console.WriteLine(exemplar.cont_qty);
+
             }
 
 

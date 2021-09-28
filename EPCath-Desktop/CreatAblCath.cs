@@ -8,6 +8,12 @@ namespace EPCath_Desktop
 {
     class CreatAblCath
     {
+        string telect_Curve = "Тип кривизны дистальной части:";
+        string select_Diam = "Диаметр катетера:";
+        string select_Cont_qty = "Количество контактных элементов:";
+        string select_shpac = "Межконтактное расстояние";
+        string select_irr = "Наличие орошения";
+        string select_Tip_length = "Длина дистального контактного элемента";
 
         enum Abl_curve
         {
